@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nain — Web Developer & Pembangun Nawaku</title>
+<meta name="description" content="Portofolio Nain — web developer yang membangun Nawaku, Aksara, Aturnow, dan berbagai proyek web lainnya." />
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+  <a class="n-logo" href="#beranda">
+    <svg class="logo-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="34" height="34" rx="10" fill="url(#lg1)"/>
+      <text x="17" y="23" text-anchor="middle" font-family="Rubik, sans-serif" font-weight="800" font-size="16" fill="white">N</text>
+      <defs><linearGradient id="lg1" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs>
+    </svg>
+    <span class="n-logo-txt">Nain</span>
+  </a>
+
+  <div class="n-links">
+    <a class="n-link" href="#tentang">Tentang</a>
+    <a class="n-link" href="#sertifikat">Sertifikat</a>
+    <a class="n-link" href="#keahlian">Keahlian</a>
+    <a class="n-link" href="#proyek">Proyek</a>
+    <a class="n-link" href="#blog">Blog</a>
+    <a class="n-link" href="#kontak">Kontak</a>
+  </div>
+
+  <div class="n-cta">
+    <a href="#kontak" class="btn btn-primary btn-sm">Hubungi Saya</a>
+
+    <div class="kebab-wrap">
+      <button class="nav-kebab" id="nav-kebab" aria-label="Menu lainnya" aria-haspopup="true" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="19" r="1.8"/></svg>
+      </button>
+      <div class="kebab-dropdown" id="kebab-dropdown">
+        <a href="#" class="kebab-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 10l5 5 5-5"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/></svg>
+          Unduh CV
+        </a>
+        <a href="https://nainpedia.com" target="_blank" rel="noopener" class="kebab-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m7 17 17-7M7 7h10v10"/></svg>
+          Kunjungi Nawaku
+        </a>
+        <a href="mailto:nain@contoh.id" class="kebab-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+          Salin Email
+        </a>
+      </div>
+    </div>
+
+    <button class="nav-burger" id="nav-burger" aria-label="Buka menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu-panel">
+    <a href="#tentang">Tentang</a>
+    <a href="#sertifikat">Sertifikat</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#proyek">Proyek</a>
+    <a href="#blog">Blog</a>
+    <a href="#kontak">Kontak</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section id="beranda" class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">Terbuka untuk proyek baru</span>
+    <h1 class="hero-title">Halo, saya <span class="accent">Nain</span> — Web Developer &amp; Pembangun Nawaku</h1>
+    <p class="hero-sub">Saya membangun aplikasi web dari nol: dari rancangan desain, sistem data, sampai fitur interaktifnya. Fokus saat ini: mengembangkan Nawaku, platform baca digital sejarah Kota Cirebon.</p>
+
+    <div class="hero-cta-row">
+      <a href="#proyek" class="btn btn-primary">
+        Lihat Proyek Saya
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#kontak" class="btn btn-secondary">Kirim Pesan</a>
+    </div>
+
+    <div class="hero-social">
+      <a href="#" class="social-icon-btn" aria-label="GitHub" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.54 2.87 8.38 6.84 9.74.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+      </a>
+      <a href="#" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48Z"/></svg>
+      </a>
+      <a href="#" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+      </a>
+      <a href="#" class="social-icon-btn" aria-label="Telegram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19.5c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.3-4.9L18 6.5c.5-.4-.1-.6-.7-.2L6.9 13.2 2 11.6c-1.1-.3-1.1-1.1.2-1.6l19.2-7.4c.9-.3 1.7.2 1.4 1.7Z"/></svg>
+      </a>
+      <a href="mailto:nain@contoh.id" class="social-icon-btn" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE BAHASA & TOOLS ============ -->
+<section class="marquee-section fade-up" aria-label="Bahasa pemrograman & tools">
+  <div class="marquee-track">
+    <div class="marquee-row marquee-left" id="marquee-row-1"></div>
+  </div>
+  <div class="marquee-track">
+    <div class="marquee-row marquee-right" id="marquee-row-2"></div>
+  </div>
+</section>
+
+<!-- ============ TENTANG SAYA ============ -->
+<section id="tentang" class="section">
+  <div class="container">
+    <div class="surface-card profile-card fade-up">
+      <div class="profile-img">N</div>
+      <div>
+        <div class="profile-name">Nain</div>
+        <span class="profile-role">Web Developer &amp; Pendiri Nawaku</span>
+        <p class="profile-desc">Web developer dan content creator berbasis di Cirebon, Jawa Barat. Senang mengerjakan proyek dari awal sampai akhir — mulai dari merancang desain, menyusun struktur data, sampai membangun fitur interaktifnya sendiri. Saat ini fokus mengembangkan <strong>Nawaku</strong>, platform baca digital yang mendokumentasikan sejarah, budaya, dan kuliner Kota Cirebon.</p>
+        <div class="profile-tags">
+          <span class="profile-tag">HTML &amp; CSS</span>
+          <span class="profile-tag">JavaScript</span>
+          <span class="profile-tag">Firebase</span>
+          <span class="profile-tag">UI/UX Design</span>
+          <span class="profile-tag">Content Writing</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-stat-row fade-up">
+      <div class="about-stat"><div class="about-stat-v">5+</div><div class="about-stat-l">Proyek Web</div></div>
+      <div class="about-stat"><div class="about-stat-v">2026</div><div class="about-stat-l">Aktif Sejak</div></div>
+      <div class="about-stat"><div class="about-stat-v">100%</div><div class="about-stat-l">Independen</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERTIFIKAT ============ -->
+<section id="sertifikat" class="section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-tag">Pencapaian</span>
+      <h2>Sertifikat &amp; Pelatihan</h2>
+      <p>Beberapa sertifikat yang sudah saya selesaikan untuk terus mengasah kemampuan.</p>
+    </div>
+
+    <div class="sertifikat-grid">
+      <div class="surface-card sertifikat-card fade-up">
+        <div class="sertifikat-thumb" style="background:linear-gradient(135deg, #2563eb, #1d4ed8);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg>
+          <span class="sertifikat-issuer-badge">Dicoding</span>
+        </div>
+        <div class="sertifikat-body">
+          <h3>Belajar Dasar Pemrograman Web</h3>
+          <p class="st-desc">Sertifikat penyelesaian kursus fundamental HTML, CSS, dan JavaScript untuk membangun halaman web interaktif.</p>
+          <div class="sertifikat-date">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+            2026
+          </div>
+        </div>
+      </div>
+
+      <div class="surface-card sertifikat-card fade-up">
+        <div class="sertifikat-thumb" style="background:linear-gradient(135deg, #7c3aed, #4c1d95);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg>
+          <span class="sertifikat-issuer-badge">Google</span>
+        </div>
+        <div class="sertifikat-body">
+          <h3>Firebase untuk Aplikasi Web</h3>
+          <p class="st-desc">Memahami Firebase Authentication, Realtime Database, dan Hosting untuk aplikasi tanpa server sendiri.</p>
+          <div class="sertifikat-date">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+            2026
+          </div>
+        </div>
+      </div>
+
+      <div class="surface-card sertifikat-card fade-up">
+        <div class="sertifikat-thumb" style="background:linear-gradient(135deg, #0f766e, #14b8a6);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg>
+          <span class="sertifikat-issuer-badge">Coursera</span>
+        </div>
+        <div class="sertifikat-body">
+          <h3>Dasar UI/UX Design</h3>
+          <p class="st-desc">Prinsip desain antarmuka, riset pengguna, dan cara merancang alur produk yang mudah dipakai.</p>
+          <div class="sertifikat-date">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+            2025
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEAHLIAN & TOOLS (ikon interaktif) ============ -->
+<section id="keahlian" class="section">
+  <div class="container">
+    <div class="section-head center fade-up">
+      <span class="section-tag">Keahlian</span>
+      <h2>Tools &amp; teknologi yang saya pakai</h2>
+      <p>Ketuk salah satu ikon untuk lihat penjelasan singkatnya.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="surface-card skill-icon-card fade-up" tabindex="0">
+        <div class="si-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg></div>
+        <div class="si-name">HTML &amp; CSS</div>
+        <div class="si-detail">Membangun struktur & tampilan situs dari nol, termasuk animasi dan layout responsif.</div>
+      </div>
+      <div class="surface-card skill-icon-card fade-up" tabindex="0">
+        <div class="si-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M13 5l-2 14"/></svg></div>
+        <div class="si-name">JavaScript</div>
+        <div class="si-detail">Logic interaktif, integrasi API, dan penyimpanan data di sisi klien maupun server.</div>
+      </div>
+      <div class="surface-card skill-icon-card fade-up" tabindex="0">
+        <div class="si-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="si-name">Firebase</div>
+        <div class="si-detail">Autentikasi, Realtime Database, dan hosting untuk aplikasi web tanpa server sendiri.</div>
+      </div>
+      <div class="surface-card skill-icon-card fade-up" tabindex="0">
+        <div class="si-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+        <div class="si-name">Data JSON</div>
+        <div class="si-detail">Merancang struktur data untuk konten, dashboard, dan sistem tanpa database rumit.</div>
+      </div>
+      <div class="surface-card skill-icon-card fade-up" tabindex="0">
+        <div class="si-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18M3 12h18"/></svg></div>
+        <div class="si-name">GitHub API</div>
+        <div class="si-detail">Mengelola konten & database lewat GitHub Contents API untuk sistem admin panel.</div>
+      </div>
+      <div class="surface-card skill-icon-card fade-up" tabindex="0">
+        <div class="si-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-6"/></svg></div>
+        <div class="si-name">Chart.js</div>
+        <div class="si-detail">Visualisasi data — grafik keuangan, statistik, dan laporan interaktif.</div>
+      </div>
+      <div class="surface-card skill-icon-card fade-up" tabindex="0">
+        <div class="si-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><path d="m6 6 2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg></div>
+        <div class="si-name">UI/UX Design</div>
+        <div class="si-detail">Merancang alur pengguna & tampilan yang konsisten dengan sistem desain sendiri.</div>
+      </div>
+      <div class="surface-card skill-icon-card fade-up" tabindex="0">
+        <div class="si-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></div>
+        <div class="si-name">Content Writing</div>
+        <div class="si-detail">Menulis konten sejarah & budaya lokal secara riset dan terstruktur untuk Nawaku.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROYEK ============ -->
+<section id="proyek" class="section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-tag">Portofolio</span>
+      <h2>Proyek yang sudah saya selesaikan</h2>
+      <p>Beberapa produk web yang saya bangun dari awal sampai jadi, lengkap dengan demo dan sumbernya.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="surface-card project-card fade-up">
+        <div class="project-thumb" style="background:linear-gradient(155deg, #1d4ed8, #3b82f6);">
+          <span class="project-status"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>Aktif Dikembangkan</span>
+          <span class="pt-title">Nawaku</span>
+        </div>
+        <div class="project-body">
+          <div class="pb-category">Platform Konten</div>
+          <h3>Nawaku — Nainpedia</h3>
+          <p>Platform baca digital yang mendokumentasikan sejarah, budaya, dan kuliner Kota Cirebon, lengkap dengan admin panel yang terhubung ke GitHub Contents API.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML/CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">GitHub API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://nainpedia.com" target="_blank" rel="noopener" class="project-link-demo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              Demo
+            </a>
+            <a href="#" class="project-link-source">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.54 2.87 8.38 6.84 9.74.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="surface-card project-card fade-up">
+        <div class="project-thumb" style="background:linear-gradient(155deg, #7c3aed, #a78bfa);">
+          <span class="project-status"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>Selesai</span>
+          <span class="pt-title">Aksara</span>
+        </div>
+        <div class="project-body">
+          <div class="pb-category">Platform Cerita</div>
+          <h3>Aksara</h3>
+          <p>Platform publikasi cerita mirip Wattpad — pengguna bisa menulis, menerbitkan bab, dan membaca cerita secara real-time.</p>
+          <div class="project-tags">
+            <span class="project-tag">Static HTML</span>
+            <span class="project-tag">Firebase Realtime DB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link-demo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              Demo
+            </a>
+            <a href="#" class="project-link-source">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.54 2.87 8.38 6.84 9.74.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="surface-card project-card fade-up">
+        <div class="project-thumb" style="background:linear-gradient(155deg, #0f766e, #2dd4bf);">
+          <span class="project-status"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>Selesai</span>
+          <span class="pt-title">Aturnow</span>
+        </div>
+        <div class="project-body">
+          <div class="pb-category">Aplikasi Keuangan</div>
+          <h3>Aturnow</h3>
+          <p>Aplikasi keuangan pribadi untuk mencatat transaksi, rekap bulanan, dan analisis dengan bantuan AI Gemini.</p>
+          <div class="project-tags">
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">Chart.js</span>
+            <span class="project-tag">Gemini AI</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link-demo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              Demo
+            </a>
+            <a href="#" class="project-link-source">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.54 2.87 8.38 6.84 9.74.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="surface-card project-card fade-up">
+        <div class="project-thumb" style="background:linear-gradient(155deg, #b45309, #f59e0b);">
+          <span class="project-status"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>Selesai</span>
+          <span class="pt-title">Nawa</span>
+        </div>
+        <div class="project-body">
+          <div class="pb-category">Marketplace Jasa</div>
+          <h3>Nawa</h3>
+          <p>Situs marketplace jasa pertumbuhan media sosial, dibangun dengan bahasa desain yang sama dengan Aturnow.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML/CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link-demo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              Demo
+            </a>
+            <a href="#" class="project-link-source">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.54 2.87 8.38 6.84 9.74.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section id="blog" class="section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-tag">Tulisan</span>
+      <h2>Dari Blog Saya</h2>
+      <p>Catatan seputar proses membangun proyek-proyek web saya.</p>
+    </div>
+
+    <div class="blog-grid">
+      <a href="#" class="surface-card blog-card fade-up">
+        <div class="blog-thumb" style="background:linear-gradient(135deg, #1d4ed8, #3b82f6);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">Proses</span>
+          <h3>Cara Saya Membangun Nawaku dari Nol</h3>
+          <p class="blog-excerpt">Cerita di balik proses riset, desain, dan pengembangan Nawaku sebagai platform sejarah Kota Cirebon.</p>
+          <div class="blog-meta">
+            <span>12 Agu 2026</span>
+            <span class="blog-read-link">Baca <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="surface-card blog-card fade-up">
+        <div class="blog-thumb" style="background:linear-gradient(135deg, #0f766e, #2dd4bf);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">Teknis</span>
+          <h3>Kenapa Saya Pilih JSON daripada Database untuk Proyek Kecil</h3>
+          <p class="blog-excerpt">Pertimbangan memilih data/database.json ketimbang database sungguhan untuk proyek-proyek latihan dan prototipe.</p>
+          <div class="blog-meta">
+            <span>20 Agu 2026</span>
+            <span class="blog-read-link">Baca <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="surface-card blog-card fade-up">
+        <div class="blog-thumb" style="background:linear-gradient(135deg, #7c3aed, #a78bfa);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">Riset</span>
+          <h3>Riset Sejarah Kota Cirebon untuk Konten Nawaku</h3>
+          <p class="blog-excerpt">Bagaimana saya mengumpulkan dan memverifikasi sumber sejarah lokal sebelum menuliskannya jadi artikel.</p>
+          <div class="blog-meta">
+            <span>25 Agu 2026</span>
+            <span class="blog-read-link">Baca <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAK ============ -->
+<section id="kontak" class="section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-tag">Kontak</span>
+      <h2>Punya proyek atau ide? Hubungi saya.</h2>
+      <p>Isi form di bawah, pesan Anda akan langsung masuk ke email saya.</p>
+    </div>
+
+    <div class="contact-layout">
+      <div class="surface-card contact-info-card fade-up">
+        <h3>Info Kontak</h3>
+        <div class="contact-info-row">
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg></div>
+          <div><div class="ci-label">Email</div><div class="ci-value">nain@contoh.id</div></div>
+        </div>
+        <div class="contact-info-row">
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="ci-label">Lokasi</div><div class="ci-value">Cirebon, Indonesia</div></div>
+        </div>
+        <div class="contact-info-row">
+          <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div><div class="ci-label">Waktu Respon</div><div class="ci-value">1–2 hari kerja</div></div>
+        </div>
+
+        <div class="hero-social" style="justify-content:flex-start; margin-top:18px;">
+          <a href="#" class="social-icon-btn" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.54 2.87 8.38 6.84 9.74.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48Z"/></svg>
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="Telegram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19.5c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.3-4.9L18 6.5c.5-.4-.1-.6-.7-.2L6.9 13.2 2 11.6c-1.1-.3-1.1-1.1.2-1.6l19.2-7.4c.9-.3 1.7.2 1.4 1.7Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="surface-card contact-form-card fade-up">
+        <div id="form-status" class="form-status"></div>
+        <form id="contact-form">
+          <div class="field">
+            <label for="cf-nama">Nama</label>
+            <input class="input" type="text" id="cf-nama" placeholder="Nama lengkap Anda" required />
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input class="input" type="email" id="cf-email" placeholder="email@anda.com" required />
+          </div>
+          <div class="field">
+            <label for="cf-pesan">Pesan</label>
+            <textarea class="input" id="cf-pesan" placeholder="Ceritakan proyek atau ide Anda..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width:100%;">
+            <span class="btn-label">Kirim Pesan</span>
+            <span class="spinner"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="ft-brand-col">
+      <div class="ft-brand">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+          <rect width="34" height="34" rx="10" fill="url(#lg2)"/>
+          <text x="17" y="23" text-anchor="middle" font-family="Rubik, sans-serif" font-weight="800" font-size="16" fill="white">N</text>
+          <defs><linearGradient id="lg2" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs>
+        </svg>
+        <span class="ft-name">Nain</span>
+      </div>
+      <p class="ft-desc">Web developer independen berbasis di Cirebon — membangun Nawaku dan berbagai proyek web lainnya.</p>
+      <div class="ft-socials">
+        <a class="ft-soc" href="#" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.54 2.87 8.38 6.84 9.74.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+        <a class="ft-soc" href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="white"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48Z"/></svg></a>
+        <a class="ft-soc" href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a class="ft-soc" href="#" aria-label="Telegram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="white"><path d="M21.9 4.3 18.8 19.5c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.3-4.9L18 6.5c.5-.4-.1-.6-.7-.2L6.9 13.2 2 11.6c-1.1-.3-1.1-1.1.2-1.6l19.2-7.4c.9-.3 1.7.2 1.4 1.7Z"/></svg></a>
+        <a class="ft-soc" href="mailto:nain@contoh.id" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg></a>
+      </div>
+    </div>
+    <div class="ft-cols">
+      <div class="ft-right">
+        <div class="ft-col-ttl">Jelajahi</div>
+        <a class="ft-col-link" href="#tentang">Tentang</a>
+        <a class="ft-col-link" href="#sertifikat">Sertifikat</a>
+        <a class="ft-col-link" href="#proyek">Proyek</a>
+        <a class="ft-col-link" href="#blog">Blog</a>
+      </div>
+      <div class="ft-right">
+        <div class="ft-col-ttl">Lainnya</div>
+        <a class="ft-col-link" href="#kontak">Kontak</a>
+        <a class="ft-col-link" href="https://nainpedia.com" target="_blank" rel="noopener">Nawaku</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="fb-copy">© <span id="current-year"></span> Nain. Semua hak dilindungi.</span>
+    <span class="fb-badge">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/></svg>
+      Dibuat dengan penuh semangat
+    </span>
+  </div>
+</footer>
+
+<div class="toast-stack" id="toast-stack"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="assets/js/emailjs-config.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
